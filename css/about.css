@@ -1,0 +1,152 @@
+body {
+  background-color: #ffc898;
+}
+
+.navbar-custom {
+    background-color:   #ff7f00;
+    color:#ffffff;
+    border-radius:0;
+    margin-bottom: 0;
+}
+
+
+footer a,
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a,
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-header a:hover,
+.navbar-header a:focus,
+.links a:hover,
+.links a:focus,
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #de6318;
+}
+
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.navbar-brand {
+  font-family: "uvf_funkydoriregular";
+  color: #f9690E;
+  font-size: 30px;
+  line-height: 30px;
+  text-shadow:
+    1px 1px 0 #fff,
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.navbar-brand:hover {
+  color: #f9690E;
+}
+
+.navbar-brand:active {
+  color: #f9690E;
+}
+
+
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+    border: 1px solid #de6318;
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+
+.login {
+  color: black;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+footer {
+  background-color:   #ff7f00;
+  height: 100%;
+  min-height: 50px;
+  padding: 5px;
+  color: #fff;
+
+}
+
+@font-face {
+    font-family: 'uvf_funkydoriregular';
+    src: url('funkydori-webfont.woff2') format('woff2'),
+         url('funkydori-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .navbar-brand {
+      text-align: center; 
+    }
+    .navbar {
+        text-align: center;
+
+    }    
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .navbar {
+        text-align: center;
+    }    
+}

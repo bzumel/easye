@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>OSI MODEL</title>
+
+
+<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" type="text/css" href="css/samplelecture.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+</head>
+<body>
+
+<div class="reveal">
+	<div class="slides">
+	
+		<section>
+			<section class="textalign id="fragments">
+				<h2>OSI Model</h2>
+				<p>The Open Systems Interconnection (OSI) model defines a networking framework to implement protocols in layers, with control passed from one layer to the next.</p>
+				<p class="fragment">It conceptually divides computer network architecture into 7 layers in a logical progression.</p>
+				
+			</section>
+			<section class="textalign layers">
+				<div class="row">
+						<h3>7 Layers</h3>
+						<p><span class="red">A</span>wa <span class="orange">P</span>ara <span class="yellow">S</span>a <span class="green">T</span>aong <span class="blue">N</span>a <span class="indigo">D</span>a<span class="violet">P</span>a</p>
+						
+					<div class="col-sm-7 col-md-7">
+						<p class="fragment">7. <a href="#application"><span class="red">A</span>pplication Layer</a></p>
+						<p class="fragment">6. <a href="#presentation"><span class="orange">P</span>resentation Layer</a></p>
+						<p class="fragment">5. <a href="#session"><span class="yellow">S</span>ession Layer</a></p>
+						<p class="fragment">4. <a href="#transport"><span class="green">T</span>ransport Layer</a></p>
+						<p class="fragment">3. <a href="#network"><span class="blue">N</span>etwork Layer</a></p>
+						<p class="fragment">2. <a href="#datalink"><span class="indigo">D</span>ata Link Layer</a></p>
+						<p class="fragment">1. <a href="#physical"><span class="violet">P</span>hysical Layer</a></p>
+					</div>
+
+					<div class="col-sm-3 col-md-4">
+						<p></p>
+						
+					</div>
+				</div>
+			</section>
+			<section id="application">
+				<h4><span class="red">A</span>pplication Layer</h4>
+				<p>It consists of protocols that focus on process-to-process communication across an IP network and provides a firm communication interface and end-user services.</p>
+				
+					
+				</ul>
+			
+
+			</section>
+			 <section id="presentation">
+				<h4><span class="orange">P</span>resentation Layer</h4>
+				<p>Serves as the data translator for the network. It is sometimes called the syntax layer</p>
+
+			</section>
+			<section id="session">
+				<h4><span class="yellow">S</span>ession Layer</h4>
+				<p>The session layer provides the mechanism for opening, closing and managing a session between end-user application processes</p>
+
+			</section>
+			<section id="transport">
+				<h4><span class="green">T</span>ransport Layer</h4>
+				<p>conceptual division of methods in the layered architecture of protocols in the network stack in the Internet Protocol Suite and the Open Systems Interconnection (OSI).</p>
+				<p>The protocols of the layer provide host-to-host communication services for applications.</p>
+
+			</section>
+			<section id="network">
+				<h4><span class="blue">N</span>etwork Layer</h4>
+				<p>responsible for packet forwarding including routing through intermediate routers.</p>
+
+			</section>
+			<section id="datalink">
+				<h4><span class="indigo">D</span>ata Link Layer</h4>
+				<p>This layer is the protocol layer that transfers data between adjacent network nodes in a wide area network (WAN) or between nodes on the same local area network (LAN) segment</p>
+			</section>
+
+			<section id="physical">
+				<h4><span class="violet">P</span>hysical Layer</h4>
+				<p>deals with bit-level transmission between different devices and supports electrical or mechanical interfaces connecting to the physical medium for synchronized communication.</p>
+
+			</section>
+
+
+		</section>
+	</div>
+</div>
+
+
+<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+</body>
+</html>
